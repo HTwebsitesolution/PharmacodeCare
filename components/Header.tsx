@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="bg-primary-700 text-white py-2">
+      <div className="bg-primary-800 text-white py-2">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-6 text-sm">
@@ -36,16 +36,21 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <Link href="/" className="flex items-center space-x-4 group">
-              <Image
-                src="/media/PHARMACODE-LOGO.jpg.jpeg"
-                alt="PharmacodeCare logo"
-                width={73}
-                height={73}
-                priority
-                className="w-20 h-20 object-contain drop-shadow-md"
-              />
+              <div className="relative">
+                <div className="absolute inset-0 bg-white rounded-xl shadow-sm border border-gray-200" />
+                <div className="relative p-2">
+                  <Image
+                    src="/media/PHARMACODE-LOGO.jpg.jpeg"
+                    alt="PharmacodeCare logo"
+                    width={73}
+                    height={73}
+                    priority
+                    className="w-16 h-16 object-contain"
+                  />
+                </div>
+              </div>
               <div>
-                <span className="text-2xl font-bold text-primary-700 block group-hover:text-primary-800 transition">
+                <span className="text-2xl font-bold text-gray-900 block group-hover:text-primary-600 transition">
                   PharmacodeCare
                 </span>
                 <p className="text-sm text-gray-600 italic mt-1">You are Supported</p>
@@ -64,14 +69,14 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold uppercase tracking-wide text-primary-700/80 transition hover:border-primary-200 hover:bg-primary-50/80 hover:text-primary-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-200 focus-visible:ring-offset-2"
+                className="relative inline-flex items-center rounded-full border border-transparent px-4 py-2 text-sm font-semibold uppercase tracking-wide text-gray-700 transition hover:border-primary-200 hover:bg-primary-50 hover:text-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-200 focus-visible:ring-offset-2"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact-us"
-              className="inline-flex items-center rounded-full bg-primary-600 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-white shadow-lg shadow-primary-900/20 transition hover:bg-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-600"
+              className="inline-flex items-center rounded-full bg-primary-500 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-white shadow-lg shadow-primary-900/20 transition hover:bg-primary-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary-500"
             >
               Contact Us
             </Link>
@@ -112,7 +117,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact-us"
-              className="block rounded-xl bg-primary-600 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wide text-white shadow-lg shadow-primary-900/20 transition hover:bg-primary-500"
+              className="block rounded-xl bg-primary-500 px-4 py-3 text-center text-sm font-semibold uppercase tracking-wide text-white shadow-lg shadow-primary-900/20 transition hover:bg-primary-600"
             >
               Contact Us
             </Link>

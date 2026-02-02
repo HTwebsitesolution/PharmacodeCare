@@ -6,6 +6,21 @@
   --foreground-rgb: 40, 67, 80;
   --background-start-rgb: 240, 247, 249;
   --background-end-rgb: 255, 255, 255;
+  
+  /* Brand Colors - Turquoise Palette */
+  --brand-50: #e9fbfd;
+  --brand-100: #cff6fb;
+  --brand-200: #a7edf6;
+  --brand-300: #71dfef;
+  --brand-400: #38cfe6;
+  --brand-500: #22d3e8; /* Logo turquoise - exact match */
+  --brand-600: #12b6c9;
+  --brand-700: #0e8e9d;
+  --brand-800: #0b6f7b;
+  
+  --ink: #0b1220;
+  --muted: #5b6777;
+  --border: #e7eef3;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -30,7 +30,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
                 href="/contact-us"
-                className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-lg font-semibold text-primary-700 shadow-2xl shadow-black/30 transition hover:bg-primary-50"
+                className="inline-flex items-center justify-center rounded-full bg-primary-500 px-8 py-4 text-lg font-semibold text-white shadow-2xl shadow-primary-900/30 transition hover:bg-primary-600"
               >
                 Request a Callback
               </Link>
@@ -77,7 +77,9 @@ export default function Home() {
                 { icon: '📞', text: '24/7 Support', detail: 'Emergency line for existing clients' },
               ].map((item, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <div className="text-4xl mb-3">{item.icon}</div>
+                  <div className="w-14 h-14 rounded-full bg-primary-50 flex items-center justify-center mb-3">
+                    <span className="text-2xl">{item.icon}</span>
+                  </div>
                   <p className="text-base font-bold text-gray-900 mb-1">{item.text}</p>
                   <p className="text-sm text-gray-700 leading-relaxed">{item.detail}</p>
                 </div>
@@ -92,7 +94,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600 mb-2">You are Supported</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-2">You are Supported</p>
               <h2 className="text-2xl font-bold text-gray-900">The people who support you</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -151,7 +153,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">
                 Real Outcomes, Real Results
               </p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -201,10 +203,12 @@ export default function Home() {
                   key={outcome.title}
                   className="rounded-2xl border border-primary-100 bg-white p-6 shadow-sm hover:shadow-md transition"
                 >
-                  <div className="text-4xl mb-4">{outcome.icon}</div>
+                  <div className="w-16 h-16 rounded-full bg-primary-50 flex items-center justify-center mb-4">
+                    <span className="text-2xl">{outcome.icon}</span>
+                  </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{outcome.title}</h3>
                   <p className="text-gray-700 mb-3 text-sm">{outcome.description}</p>
-                  <p className="text-xs text-primary-700 font-medium border-t border-gray-100 pt-3 leading-relaxed">
+                  <p className="text-xs text-primary-800 font-medium border-t border-gray-100 pt-3 leading-relaxed">
                     Measured by: {outcome.measurement}
                   </p>
                 </div>
@@ -274,7 +278,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Our Services</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Our Services</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Specialist care across South West London</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -333,7 +337,7 @@ export default function Home() {
                   <p className="text-gray-700 mb-3 text-sm">{service.description}</p>
                   <div className="flex flex-wrap gap-2 mb-3">
                     {service.tags.map((tag) => (
-                      <span key={tag} className="text-xs px-2 py-1 bg-primary-50 text-primary-700 rounded-full">
+                      <span key={tag} className="text-xs px-2 py-1 bg-primary-50 text-primary-800 rounded-full">
                         {tag}
                       </span>
                     ))}
@@ -351,7 +355,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Simple Process</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Simple Process</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">How we work together</h2>
             </div>
             <div className="grid md:grid-cols-4 gap-8 mb-8">
@@ -382,12 +386,12 @@ export default function Home() {
                 },
               ].map((item) => (
                 <div key={item.step} className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-primary-600 text-white text-3xl font-bold flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 rounded-full bg-primary-500 text-white text-3xl font-bold flex items-center justify-center mx-auto mb-4">
                     {item.step}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-700 mb-3 leading-relaxed text-sm">{item.description}</p>
-                  <p className="text-sm font-semibold text-primary-700">{item.commitment}</p>
+                  <p className="text-sm font-semibold text-primary-600">{item.commitment}</p>
                 </div>
               ))}
             </div>
@@ -406,7 +410,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Safety & Protection</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Safety & Protection</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">How we keep people safe</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
@@ -442,7 +446,7 @@ export default function Home() {
                 <div className="pt-4 border-t border-gray-200">
                   <Link
                     href="/policies"
-                    className="inline-block text-primary-700 hover:text-primary-800 font-semibold text-sm"
+                    className="inline-block text-primary-600 hover:text-primary-700 font-semibold text-sm"
                   >
                     View all policies →
                   </Link>
@@ -474,7 +478,7 @@ export default function Home() {
                 >
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-700 text-sm mb-3">{item.description}</p>
-                  <span className="text-primary-700 font-semibold text-sm">Learn more →</span>
+                  <span className="text-primary-600 hover:text-primary-700 font-semibold text-sm transition">Learn more →</span>
                 </Link>
               ))}
             </div>
@@ -487,7 +491,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600 mb-4">Areas We Cover</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Areas We Cover</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Serving South West London</h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                 We provide residential care and domiciliary support across four boroughs. <strong>Same-week starts subject to availability.</strong>
@@ -536,7 +540,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Real Stories</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Real Stories</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">What families and individuals say</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
@@ -594,7 +598,7 @@ export default function Home() {
             sizes="100vw"
             priority={false}
           />
-          <div className="absolute inset-0 bg-primary-900/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-800/90 via-primary-600/85 to-primary-500/80" />
         </div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white space-y-6">
@@ -606,7 +610,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact-us"
-                className="inline-flex items-center rounded-full bg-white px-8 py-3 text-primary-800 text-lg font-semibold shadow-xl shadow-black/20 transition hover:bg-primary-50"
+                className="inline-flex items-center rounded-full bg-primary-500 px-8 py-3 text-white text-lg font-semibold shadow-xl shadow-primary-900/30 transition hover:bg-primary-600"
               >
                 Request a Callback
               </Link>
