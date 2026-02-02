@@ -24,7 +24,7 @@ export default function Footer() {
                 <Image src="/media/PHARMACODE-LOGO.jpg.jpeg" alt="PharmacodeCare logo" width={57} height={57} className="rounded-xl bg-white/90 p-2" />
                 <div>
                   <p className="text-sm uppercase tracking-[0.3em] text-primary-100">PharmacodeCare</p>
-                  <p className="text-xl font-semibold">Outcome-Focused Care Services</p>
+                  <p className="text-xl font-semibold">You are Supported</p>
                 </div>
               </div>
               <p className="text-primary-50 leading-relaxed">

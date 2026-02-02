@@ -31,7 +31,7 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-800/70 to-primary-600/70" />
         <div className="relative container mx-auto px-4 py-24">
           <div className="max-w-3xl space-y-6">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary-100">About PharmacodeCare</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Care services built on expertise, compassion, and outcome-focused support
             </h1>

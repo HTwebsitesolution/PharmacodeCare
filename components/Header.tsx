@@ -48,7 +48,7 @@ export default function Header() {
                 <span className="text-2xl font-bold text-primary-700 block group-hover:text-primary-800 transition">
                   PharmacodeCare
                 </span>
-                <p className="text-sm text-gray-600 italic mt-1">Outcome-Focused Care Services</p>
+                <p className="text-sm text-gray-600 italic mt-1">You are Supported</p>
               </div>
             </Link>
           </div>

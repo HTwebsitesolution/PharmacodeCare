@@ -8,9 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'PharmacodeCare - Quality Healthcare Solutions',
-  description: 'PharmacodeCare provides residential care and domiciliary support services enabling individuals to maintain independence, improve wellbeing, and remain safely in their own homes.',
+  description: 'PharmacodeCare - You are Supported. Residential care and domiciliary support services enabling individuals to maintain independence, improve wellbeing, and remain safely in their own homes.',
   icons: {
     icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 }
 

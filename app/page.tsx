@@ -19,7 +19,7 @@ export default function Home() {
         <div className="relative z-10 container mx-auto px-4 py-24">
           <div className="max-w-4xl space-y-6">
             <p className="inline-block rounded-full bg-white/15 px-4 py-1 text-sm font-semibold uppercase tracking-[0.2em]">
-              Outcome-Focused Home Care
+              You are Supported
             </p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight drop-shadow-xl">
               Stay safely at home, improve wellbeing, reduce hospital reliance
@@ -45,23 +45,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Strip */}
-      <section className="py-6 bg-white border-b border-gray-200">
+      {/* CQC Status & Registered Manager */}
+      <section className="py-8 bg-primary-50 border-b-2 border-primary-200">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="text-center md:text-left">
+                <p className="text-sm font-semibold uppercase tracking-wide text-primary-700 mb-2">CQC Status</p>
+                <p className="text-2xl font-bold text-gray-900">Quality Care at all times</p>
+                <p className="text-gray-700 mt-1">In Application</p>
+              </div>
+              <div className="text-center md:text-left border-l-0 md:border-l-2 border-primary-200 pl-0 md:pl-8">
+                <p className="text-sm font-semibold uppercase tracking-wide text-primary-700 mb-2">Registered Manager</p>
+                <p className="text-xl font-bold text-gray-900">Experienced Leadership</p>
+                <p className="text-gray-700 mt-1">Qualified and registered care management team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Strip - Reduced to 4, Bigger, Qualified */}
+      <section className="py-8 bg-white border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                { icon: '✓', text: 'DBS-Checked Staff', detail: 'Enhanced checks' },
-                { icon: '🛡️', text: 'Safeguarding Trained', detail: 'Regular updates' },
-                { icon: '📋', text: 'Insured & Compliant', detail: 'Full coverage' },
-                { icon: '⏱️', text: '2-Hour Response', detail: 'Call back time' },
-                { icon: '📞', text: '24/7 Support', detail: 'Emergency line' },
-                { icon: '📚', text: 'Ongoing Training', detail: 'CQC standards' },
+                { icon: '✓', text: 'DBS-Checked Staff', detail: 'Enhanced checks for all team members' },
+                { icon: '🛡️', text: 'Safeguarding Trained', detail: 'Regular updates & CQC standards' },
+                { icon: '⏱️', text: '2-Hour Response', detail: 'During opening hours (Mon-Fri 9am-6pm)' },
+                { icon: '📞', text: '24/7 Support', detail: 'Emergency line for existing clients' },
               ].map((item, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <div className="text-2xl mb-2">{item.icon}</div>
-                  <p className="text-sm font-semibold text-gray-900">{item.text}</p>
-                  <p className="text-xs text-gray-600 mt-1">{item.detail}</p>
+                  <div className="text-4xl mb-3">{item.icon}</div>
+                  <p className="text-base font-bold text-gray-900 mb-1">{item.text}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed">{item.detail}</p>
                 </div>
               ))}
             </div>
@@ -69,7 +87,66 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Outcome Blocks Section */}
+      {/* Meet the Team - Visual Anchor #1 */}
+      <section className="py-12 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600 mb-2">You are Supported</p>
+              <h2 className="text-2xl font-bold text-gray-900">The people who support you</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Registered Manager / Care Coordinator */}
+              <div className="text-center">
+                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  {/* TODO: Replace with real Registered Manager headshot */}
+                  <Image
+                    src="/about/about-5.png"
+                    alt="Registered Manager"
+                    fill
+                    className="object-cover"
+                    sizes="128px"
+                  />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-1">Registered Manager</h3>
+                <p className="text-sm text-gray-600">Qualified & experienced leadership</p>
+              </div>
+              {/* Support Worker */}
+              <div className="text-center">
+                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  {/* TODO: Replace with real support worker photo */}
+                  <Image
+                    src="/about/about-4.png"
+                    alt="Support Worker"
+                    fill
+                    className="object-cover"
+                    sizes="128px"
+                  />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-1">Care Team</h3>
+                <p className="text-sm text-gray-600">Dedicated support professionals</p>
+              </div>
+              {/* Training/Coordination */}
+              <div className="text-center">
+                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  {/* TODO: Replace with real training/coordination photo */}
+                  <Image
+                    src="/about/about-3.png"
+                    alt="Training & Coordination"
+                    fill
+                    className="object-cover"
+                    sizes="128px"
+                  />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-1">Training & Development</h3>
+                <p className="text-sm text-gray-600">Ongoing professional development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Outcome Blocks Section - Reduced Text */}
       <Reveal as="section" className="py-20 bg-white fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -80,46 +157,43 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 What outcome-focused care means for you
               </h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                Our care isn&apos;t just about support—it&apos;s about measurable improvements that matter to you and your family.
-              </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
                   title: 'Stay Safely at Home',
-                  description: 'Reduce hospital admissions and emergency visits through proactive care planning and daily support.',
-                  measurement: 'Weekly goals reviewed with you • Falls risk plan + home safety checklist',
+                  description: 'Reduce hospital admissions through proactive care planning.',
+                  measurement: 'Weekly goals • Falls risk plan • Safety checklist',
                   icon: '🏠',
                 },
                 {
                   title: 'Improve Daily Living Skills',
-                  description: 'Build confidence in cooking, budgeting, medication management, and personal care routines.',
-                  measurement: 'Skills tracked monthly • Progress milestones celebrated',
+                  description: 'Build confidence in cooking, budgeting, and personal care.',
+                  measurement: 'Skills tracked monthly • Milestones celebrated',
                   icon: '💪',
                 },
                 {
                   title: 'Reduce Hospital Reliance',
-                  description: 'Prevent readmissions with consistent care, medication prompts, and health monitoring.',
-                  measurement: 'Medication prompts recorded • Health alerts escalated promptly',
+                  description: 'Prevent readmissions with consistent care and monitoring.',
+                  measurement: 'Medication prompts • Health alerts • Care updates',
                   icon: '🏥',
                 },
                 {
                   title: 'Support Routines & Wellbeing',
-                  description: 'Maintain independence through structured support that adapts to your daily life.',
-                  measurement: 'Routine plans co-created • Regular wellbeing checks',
+                  description: 'Maintain independence through structured daily support.',
+                  measurement: 'Routine plans • Wellbeing checks • Adjustments',
                   icon: '📅',
                 },
                 {
                   title: 'Community Access',
-                  description: 'Reconnect with local activities, volunteering, and social groups that matter to you.',
-                  measurement: 'Community goals set together • Transport support available',
+                  description: 'Reconnect with local activities and social groups.',
+                  measurement: 'Community goals • Transport support • Regular outings',
                   icon: '🤝',
                 },
                 {
                   title: 'Reablement Milestones',
-                  description: 'Track progress on goals like managing finances, using public transport, and building relationships.',
-                  measurement: 'Milestone reviews every 6 weeks • Achievements documented',
+                  description: 'Track progress on finances, transport, and relationships.',
+                  measurement: '6-week reviews • Achievements documented • Goals updated',
                   icon: '🎯',
                 },
               ].map((outcome) => (
@@ -129,23 +203,26 @@ export default function Home() {
                 >
                   <div className="text-4xl mb-4">{outcome.icon}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{outcome.title}</h3>
-                  <p className="text-gray-700 mb-3">{outcome.description}</p>
-                  <p className="text-xs text-primary-700 font-medium border-t border-gray-100 pt-3">
-                    How we measure: {outcome.measurement}
+                  <p className="text-gray-700 mb-3 text-sm">{outcome.description}</p>
+                  <p className="text-xs text-primary-700 font-medium border-t border-gray-100 pt-3 leading-relaxed">
+                    Measured by: {outcome.measurement}
                   </p>
                 </div>
               ))}
             </div>
-            {/* Mini Case Study */}
+            {/* Mini Case Study - With Legitimacy Note */}
             <div className="mt-12 rounded-2xl border-2 border-primary-200 bg-primary-50/50 p-8">
               <div className="flex items-start gap-4">
                 <div className="text-4xl">💬</div>
-                <div>
+                <div className="flex-1">
                   <p className="text-sm font-semibold uppercase tracking-wide text-primary-700 mb-2">Real Result</p>
                   <p className="text-lg text-gray-800 italic mb-2">
                     &quot;After 6 weeks: improved routine, fewer missed medications, regained confidence leaving home.&quot;
                   </p>
-                  <p className="text-sm text-gray-600">— Service user, Lambeth (anonymised, with consent)</p>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <p className="text-sm text-gray-700">— Service user, Lambeth</p>
+                    <p className="text-xs text-gray-600 italic">Anonymised, shared with consent</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -153,8 +230,47 @@ export default function Home() {
         </div>
       </Reveal>
 
-      {/* Services Overview */}
-      <Reveal as="section" className="py-20 bg-gray-50 fade-up">
+      {/* Visual Anchor #2 - Care in Action (Wide Image) */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+                {/* TODO: Replace with real "care in action" photo - carer with care plan, meal prep, or companionship (non-identifiable) */}
+                <Image
+                  src="/homepage/home-1.png"
+                  alt="Care in action - supporting daily living"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              </div>
+              <div className="space-y-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-600">You are Supported</p>
+                <h2 className="text-3xl font-bold text-gray-900">Care that adapts to your life</h2>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary-600 text-xl mt-1">✓</span>
+                    <span className="text-gray-700"><strong>Care plan in 24–48 hours</strong> after assessment</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary-600 text-xl mt-1">✓</span>
+                    <span className="text-gray-700"><strong>Weekly outcomes review</strong> with you and your family</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary-600 text-xl mt-1">✓</span>
+                    <span className="text-gray-700"><strong>Family updates available</strong> whenever you need them</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview - Reduced Text, Visual Focus */}
+      <Reveal as="section" className="py-20 bg-white fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -165,38 +281,44 @@ export default function Home() {
               {[
                 {
                   title: 'Domiciliary Care',
-                  description: 'Personal care and daily living support in your own home, tailored to your needs.',
+                  description: 'Personal care and daily living support in your own home.',
+                  tags: ['Personal care', 'Meals', 'Medication prompts'],
                   boundary: 'Non-clinical support alongside NHS/clinical teams where appropriate.',
                   link: '/services',
                 },
                 {
                   title: 'Support for Elderly & Disabled',
-                  description: 'Compassionate care enabling independence and wellbeing for older adults and those with disabilities.',
-                  boundary: 'Ages 18-85. Tailored support plans reviewed regularly.',
+                  description: 'Compassionate care enabling independence and wellbeing.',
+                  tags: ['Ages 18-85', 'Tailored plans', 'Regular reviews'],
+                  boundary: 'Flexible support that adapts to changing needs.',
                   link: '/services',
                 },
                 {
                   title: 'Mental Health Support',
-                  description: 'Specialist residential and community support for mental health recovery and stability.',
+                  description: 'Specialist residential and community support for recovery.',
+                  tags: ['Residential', 'Community', 'Recovery focus'],
                   boundary: 'Non-clinical support alongside NHS/clinical teams where appropriate.',
                   link: '/services',
                 },
                 {
                   title: 'Substance Misuse Recovery',
-                  description: 'Structured support programs for individuals working towards recovery and independence.',
+                  description: 'Structured support programs for recovery and independence.',
+                  tags: ['Structured programs', 'Recovery focus', 'Independence'],
                   boundary: 'Non-clinical support alongside NHS/clinical teams where appropriate.',
                   link: '/services',
                 },
                 {
                   title: 'Respite Care',
-                  description: 'Short-term support giving families and carers a well-deserved break.',
-                  boundary: 'Flexible arrangements from a few hours to several weeks.',
+                  description: 'Short-term support giving families and carers a break.',
+                  tags: ['Flexible hours', 'Short-term', 'Family support'],
+                  boundary: 'From a few hours to several weeks.',
                   link: '/services',
                 },
                 {
                   title: 'Learning Disabilities Support',
-                  description: 'Person-centered care helping individuals with learning disabilities thrive in their communities.',
-                  boundary: 'Community-based support promoting independence and choice.',
+                  description: 'Person-centered care helping individuals thrive in communities.',
+                  tags: ['Person-centered', 'Community', 'Independence'],
+                  boundary: 'Community-based support promoting choice.',
                   link: '/services',
                 },
               ].map((service) => (
@@ -208,11 +330,15 @@ export default function Home() {
                   <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary-700 transition">
                     {service.title}
                   </h3>
-                  <p className="text-gray-700 mb-3">{service.description}</p>
+                  <p className="text-gray-700 mb-3 text-sm">{service.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {service.tags.map((tag) => (
+                      <span key={tag} className="text-xs px-2 py-1 bg-primary-50 text-primary-700 rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                   <p className="text-xs text-gray-600 italic border-t border-gray-100 pt-3">{service.boundary}</p>
-                  <span className="inline-block mt-4 text-primary-600 font-semibold text-sm">
-                    Learn more →
-                  </span>
                 </Link>
               ))}
             </div>
@@ -221,15 +347,12 @@ export default function Home() {
       </Reveal>
 
       {/* How It Works - Improved */}
-      <Reveal as="section" className="py-20 bg-white fade-up">
+      <Reveal as="section" className="py-20 bg-gray-50 fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Simple Process</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">How we work together</h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                From first enquiry to ongoing care, we keep the process clear, transparent, and focused on your needs.
-              </p>
             </div>
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               {[
@@ -237,24 +360,24 @@ export default function Home() {
                   step: '1', 
                   title: 'Enquiry', 
                   description: 'Call, email, or complete our form.',
-                  commitment: 'We respond within 2 hours'
+                  commitment: 'We respond within 2 hours (Mon-Fri 9am-6pm)'
                 },
                 { 
                   step: '2', 
                   title: 'Assessment', 
-                  description: 'We meet you at home to understand your needs, goals, and preferences.',
+                  description: 'We meet you at home to understand your needs.',
                   commitment: 'Usually within 48 hours'
                 },
                 { 
                   step: '3', 
                   title: 'Care Plan', 
-                  description: 'Together, we create a personalized plan with clear outcomes and milestones.',
+                  description: 'Together, we create a personalized plan.',
                   commitment: 'Written plan within 1 week'
                 },
                 { 
                   step: '4', 
                   title: 'Start Care', 
-                  description: 'Your dedicated care team begins support, with regular check-ins from day one.',
+                  description: 'Your dedicated care team begins support.',
                   commitment: 'Same-week starts available'
                 },
               ].map((item) => (
@@ -263,7 +386,7 @@ export default function Home() {
                     {item.step}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-700 mb-3 leading-relaxed">{item.description}</p>
+                  <p className="text-gray-700 mb-3 leading-relaxed text-sm">{item.description}</p>
                   <p className="text-sm font-semibold text-primary-700">{item.commitment}</p>
                 </div>
               ))}
@@ -278,7 +401,88 @@ export default function Home() {
         </div>
       </Reveal>
 
-      {/* Areas Served - Enhanced */}
+      {/* How We Keep People Safe - Consolidated with Visual */}
+      <Reveal as="section" className="py-20 bg-white fade-up">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Safety & Protection</p>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">How we keep people safe</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl">
+                {/* TODO: Replace with real training photo - staff with manuals/lanyards, training session */}
+                <Image
+                  src="/services/service-6.png"
+                  alt="Staff training and development"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              </div>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">DBS + Training + Supervision</h3>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-600 mt-1">✓</span>
+                      <span>Enhanced DBS checks for all staff</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-600 mt-1">✓</span>
+                      <span>Regular safeguarding training updates</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-primary-600 mt-1">✓</span>
+                      <span>Ongoing supervision and support</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="pt-4 border-t border-gray-200">
+                  <Link
+                    href="/policies"
+                    className="inline-block text-primary-700 hover:text-primary-800 font-semibold text-sm"
+                  >
+                    View all policies →
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: 'Safeguarding',
+                  description: 'Clear procedures to protect vulnerable adults.',
+                  link: '/policies',
+                },
+                {
+                  title: 'Complaints Process',
+                  description: 'Transparent procedure with independent review.',
+                  link: '/policies',
+                },
+                {
+                  title: 'Privacy & Data',
+                  description: 'Protected in accordance with GDPR.',
+                  link: '/policies',
+                },
+              ].map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.link}
+                  className="rounded-xl border border-primary-100 bg-white p-6 shadow-sm hover:shadow-md transition text-center"
+                >
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-700 text-sm mb-3">{item.description}</p>
+                  <span className="text-primary-700 font-semibold text-sm">Learn more →</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Reveal>
+
+      {/* Areas Served - Visual Anchor #3 with Map/Borough Visual */}
       <Reveal as="section" className="py-20 bg-primary-50 fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -288,6 +492,17 @@ export default function Home() {
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
                 We provide residential care and domiciliary support across four boroughs. <strong>Same-week starts subject to availability.</strong>
               </p>
+            </div>
+            <div className="mb-8">
+              {/* TODO: Add simple map illustration or borough montage visual here */}
+              <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-primary-100 to-primary-200">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center text-gray-700">
+                    <p className="text-2xl font-bold mb-2">South West London</p>
+                    <p className="text-sm">Lambeth • Wandsworth • Merton • Richmond upon Thames</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               {['Lambeth', 'Wandsworth', 'Merton', 'Richmond upon Thames'].map((borough) => (
@@ -310,56 +525,6 @@ export default function Home() {
                 className="inline-flex items-center rounded-full border border-primary-300 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-primary-800 transition hover:bg-primary-50 mt-4"
               >
                 View Coverage Details →
-              </Link>
-            </div>
-          </div>
-        </div>
-      </Reveal>
-
-      {/* Trust & Compliance */}
-      <Reveal as="section" className="py-20 bg-white fade-up">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">Trust & Compliance</p>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Your safety and wellbeing is our priority</h2>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                {
-                  title: 'DBS Checked Staff',
-                  description: 'All care professionals undergo enhanced DBS checks and ongoing monitoring.',
-                  icon: '✓',
-                },
-                {
-                  title: 'Comprehensive Training',
-                  description: 'Regular training in safeguarding, person-centered care, and health & safety.',
-                  icon: '📚',
-                },
-                {
-                  title: 'Safeguarding Policies',
-                  description: 'Robust procedures to protect vulnerable adults, with clear reporting channels.',
-                  icon: '🛡️',
-                },
-                {
-                  title: 'Complaints Process',
-                  description: 'Transparent complaints procedure with independent review and rapid response.',
-                  icon: '📋',
-                },
-              ].map((item) => (
-                <div key={item.title} className="rounded-xl border border-primary-100 bg-white p-6 text-center">
-                  <div className="text-3xl mb-3">{item.icon}</div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-12 text-center">
-              <Link
-                href="/policies"
-                className="text-primary-700 hover:text-primary-800 font-semibold underline text-lg"
-              >
-                View all policies and procedures →
               </Link>
             </div>
           </div>
@@ -433,7 +598,7 @@ export default function Home() {
         </div>
         <div className="relative container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-100">Get Started</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h2 className="text-4xl md:text-5xl font-bold">Ready to discuss your care needs?</h2>
             <p className="text-lg text-primary-50">
               Whether you&apos;re a family member, commissioner, or individual seeking support, we&apos;re here to help.

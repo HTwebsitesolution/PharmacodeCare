@@ -40,9 +40,9 @@ export default function ContactUs() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-primary-800/70 to-primary-600/70" />
         <div className="relative container mx-auto px-4 py-24">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary-100">Get In Touch</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-primary-100 font-semibold">Outcome-Focused Care Services</p>
+            <p className="text-xl md:text-2xl text-primary-100 font-semibold">You are Supported</p>
             <p className="text-lg text-primary-50 max-w-2xl mx-auto">
               Whether you are a commissioner, care professional, or family member, our dedicated team is ready to explore how PharmacodeCare can help support independence and wellbeing.
             </p>
