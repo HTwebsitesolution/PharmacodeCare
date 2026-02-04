@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Trust Strip - Reduced to 4, Bigger, Qualified */}
-      <section className="py-8 bg-white border-b border-gray-200">
+      <Reveal as="section" className="py-8 bg-white border-b border-gray-200 fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -76,18 +76,23 @@ export default function Home() {
                 { icon: '⏱️', text: '2-Hour Response', detail: 'During opening hours (Mon-Fri 9am-6pm)' },
                 { icon: '📞', text: '24/7 Support', detail: 'Emergency line for existing clients' },
               ].map((item, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-14 h-14 rounded-full bg-primary-50 flex items-center justify-center mb-3">
-                    <span className="text-2xl">{item.icon}</span>
+                <Reveal
+                  key={index}
+                  className="flex flex-col items-center fade-up group cursor-pointer"
+                  threshold={0.3}
+                  rootMargin="0px 0px -50px 0px"
+                >
+                  <div className="w-14 h-14 rounded-full bg-primary-50 flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary-100 group-hover:shadow-lg">
+                    <span className="text-2xl transition-transform duration-300 group-hover:scale-125 group-hover:rotate-6 animate-icon-pulse">{item.icon}</span>
                   </div>
-                  <p className="text-base font-bold text-gray-900 mb-1">{item.text}</p>
-                  <p className="text-sm text-gray-700 leading-relaxed">{item.detail}</p>
-                </div>
+                  <p className="text-base font-bold text-gray-900 mb-1 transition-colors duration-300 group-hover:text-primary-700">{item.text}</p>
+                  <p className="text-sm text-gray-700 leading-relaxed transition-colors duration-300 group-hover:text-gray-900">{item.detail}</p>
+                </Reveal>
               ))}
             </div>
           </div>
         </div>
-      </section>
+      </Reveal>
 
       {/* Meet the Team - Visual Anchor #1 */}
       <section className="py-12 bg-gray-50">
@@ -384,15 +389,23 @@ export default function Home() {
                   description: 'Your dedicated care team begins support.',
                   commitment: 'Same-week starts available'
                 },
-              ].map((item) => (
-                <div key={item.step} className="text-center">
-                  <div className="w-20 h-20 rounded-full bg-primary-500 text-white text-3xl font-bold flex items-center justify-center mx-auto mb-4">
+              ].map((item, index) => (
+                <Reveal
+                  key={item.step}
+                  className="text-center fade-up step-wrapper"
+                  threshold={0.2}
+                  rootMargin="0px 0px -100px 0px"
+                  style={{
+                    '--step-delay': `${index * 0.6}s`,
+                  } as React.CSSProperties}
+                >
+                  <div className="w-20 h-20 rounded-full bg-primary-500 text-white text-3xl font-bold flex items-center justify-center mx-auto mb-4 transition-all duration-500 hover:scale-110 hover:shadow-xl step-number">
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-700 mb-3 leading-relaxed text-sm">{item.description}</p>
-                  <p className="text-sm font-semibold text-primary-600">{item.commitment}</p>
-                </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 step-title">{item.title}</h3>
+                  <p className="text-gray-700 mb-3 leading-relaxed text-sm step-description">{item.description}</p>
+                  <p className="text-sm font-semibold text-primary-600 step-commitment">{item.commitment}</p>
+                </Reveal>
               ))}
             </div>
             <div className="rounded-2xl bg-primary-50 border border-primary-200 p-6 text-center">
