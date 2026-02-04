@@ -1,21 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Reveal from '@/components/Reveal'
+import HeroSlider from '@/components/HeroSlider'
 
 export default function Home() {
   return (
     <div className="min-h-screen space-y-12">
       {/* Single Hero */}
       <section className="relative isolate min-h-[600px] overflow-hidden bg-gray-900 text-white">
-        <Image
-          src="/slider/slide-1.png"
-          alt="PharmacodeCare care services"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent" />
+        <HeroSlider />
         <div className="relative z-10 container mx-auto px-4 py-24">
           <div className="max-w-4xl space-y-6">
             <p className="inline-block rounded-full bg-white/15 px-4 py-1 text-sm font-semibold uppercase tracking-[0.2em]">
