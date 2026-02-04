@@ -40,7 +40,7 @@ export default function Header() {
                 <div className="absolute inset-0 bg-white rounded-xl shadow-sm border border-gray-200" />
                 <div className="relative p-2">
                   <Image
-                    src="/media/PHARMACODE-LOGO.jpg.jpeg"
+                    src="/media/Pharmacode%20Logo%20-updated.png"
                     alt="PharmacodeCare logo"
                     width={73}
                     height={73}

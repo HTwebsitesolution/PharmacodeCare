@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="grid gap-10 lg:grid-cols-4 text-white">
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <Image src="/media/PHARMACODE-LOGO.jpg.jpeg" alt="PharmacodeCare logo" width={57} height={57} className="rounded-xl bg-white/90 p-2" />
+                <Image src="/media/Pharmacode%20Logo%20-updated.png" alt="PharmacodeCare logo" width={57} height={57} className="rounded-xl bg-white/90 p-2" />
                 <div>
                   <p className="text-sm uppercase tracking-[0.3em] text-primary-100">PharmacodeCare</p>
                   <p className="text-xl font-semibold">You are Supported</p>
