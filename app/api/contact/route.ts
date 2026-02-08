@@ -1,8 +1,6 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: Request) {
   try {
     // Check if API key is configured
@@ -47,6 +45,9 @@ export async function POST(request: Request) {
     // For testing: use the account owner's email (htwebsitesolution@gmail.com)
     // For production: verify your domain at resend.com/domains
     const recipientEmail = process.env.CONTACT_EMAIL || 'htwebsitesolution@gmail.com'
+    
+    // Initialize Resend client only when needed (not at module level to avoid build errors)
+    const resend = new Resend(process.env.RESEND_API_KEY)
     
     console.log('Attempting to send email...')
     console.log('API Key present:', !!process.env.RESEND_API_KEY)
