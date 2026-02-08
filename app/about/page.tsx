@@ -40,8 +40,8 @@ export default function About() {
             </p>
             <div className="flex flex-wrap gap-8 text-primary-50">
               <div>
-                <p className="text-4xl font-bold text-white">15+</p>
-                <p className="text-sm uppercase tracking-[0.2em]">Years serving community</p>
+                <p className="text-4xl font-bold text-white">10+</p>
+                <p className="text-sm uppercase tracking-[0.2em]">Years NHS nursing experience</p>
               </div>
               <div>
                 <p className="text-4xl font-bold text-white">24/7</p>
@@ -50,6 +50,7 @@ export default function About() {
               <div>
                 <p className="text-4xl font-bold text-white">92%</p>
                 <p className="text-sm uppercase tracking-[0.2em]">Improved wellbeing</p>
+                <p className="text-xs mt-1 text-primary-200">Based on observation & experience</p>
               </div>
             </div>
           </div>
@@ -64,7 +65,7 @@ export default function About() {
               Built by care professionals who believe in independence-first support
             </h2>
             <p>
-              PharmacodeCare was founded by a team of experienced care professionals, support workers, and mental health specialists who wanted to reimagine care delivery. We saw the need for comprehensive, person-centered care services that truly enable independence. Today, our residential facilities and domiciliary services combine safe, supportive environments with expert care so individuals can thrive in their own homes.
+              PharmacodeCare was founded by a registered NHS nurse with over 10 years of experience delivering quality care. Drawing on extensive clinical experience, we saw the need for comprehensive, person-centered care services that truly enable independence. Today, our residential facilities and domiciliary services combine safe, supportive environments with expert care so individuals can thrive in their own homes.
             </p>
             <p>
               Every person we support is welcomed with respect and understanding. We take time to learn their story, cultural background, family ties, and the goals they still carry. That knowledge fuels personalized care plans covering daily living support, community integration, wellbeing activities, and meaningful routines.

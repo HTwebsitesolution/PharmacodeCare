@@ -132,7 +132,6 @@ export default function ContactUs() {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">Contact Us</h1>
-            <p className="text-xl md:text-2xl text-primary-100 font-semibold">You are Supported</p>
             <p className="text-lg text-primary-50 max-w-2xl mx-auto">
               Whether you are a commissioner, care professional, or family member, our dedicated team is ready to explore how PharmacodeCare can help support independence and wellbeing.
             </p>

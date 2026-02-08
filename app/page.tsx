@@ -47,7 +47,7 @@ export default function Home() {
               <div className="text-center md:text-left">
                 <p className="text-sm font-semibold uppercase tracking-wide text-primary-700 mb-2">CQC Status</p>
                 <p className="text-2xl font-bold text-gray-900">Quality Care at all times</p>
-                <p className="text-gray-700 mt-1">In Application</p>
+                <p className="text-gray-700 mt-1">CQC Registration in Progress</p>
               </div>
               <div className="text-center md:text-left border-l-0 md:border-l-2 border-primary-200 pl-0 md:pl-8">
                 <p className="text-sm font-semibold uppercase tracking-wide text-primary-700 mb-2">Registered Manager</p>

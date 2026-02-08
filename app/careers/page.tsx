@@ -36,12 +36,12 @@ export default function Careers() {
       <section className="relative isolate overflow-hidden bg-gradient-to-r from-primary-700 to-primary-500 text-white py-24">
         <div className="relative container mx-auto px-4">
           <div className="max-w-3xl space-y-6">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary-100">Join Our Team</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Make a real difference in people&apos;s lives
             </h1>
             <p className="text-lg text-primary-50">
-              We&apos;re always looking for compassionate, dedicated individuals to join our care team across South West London.
+              We&apos;re always looking for compassionate, dedicated individuals to join our care team across South West London. At PharmacodeCare, we believe in supporting our staff just as we support the people in our care.
             </p>
           </div>
         </div>
@@ -50,7 +50,13 @@ export default function Careers() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Work With Us?</h2>
+            <div className="text-center mb-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-2">You are Supported</p>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Work With Us?</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                At PharmacodeCare, we believe in supporting our team members just as we support the people in our care. We create an environment where you can grow, learn, and make a meaningful impact.
+              </p>
+            </div>
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               {benefits.map((benefit) => (
                 <div key={benefit} className="flex items-start gap-3">
