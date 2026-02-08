@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import LondonBoroughsMap from '@/components/LondonBoroughsMap'
 
 const boroughs = [
   {
@@ -53,6 +54,9 @@ export default function AreasWeCover() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
+            <div className="mb-12">
+              <LondonBoroughsMap />
+            </div>
             <div className="grid md:grid-cols-2 gap-8">
               {boroughs.map((borough) => (
                 <div

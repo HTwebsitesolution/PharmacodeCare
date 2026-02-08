@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Reveal from '@/components/Reveal'
 import HeroSlider from '@/components/HeroSlider'
+import LondonBoroughsMap from '@/components/LondonBoroughsMap'
 
 export default function Home() {
   return (
@@ -106,6 +107,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     sizes="128px"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Registered Manager</h3>
@@ -121,6 +123,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     sizes="128px"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Care Team</h3>
@@ -136,6 +139,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                     sizes="128px"
+                    loading="lazy"
                   />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-1">Training & Development</h3>
@@ -245,6 +249,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               </div>
@@ -428,6 +433,7 @@ export default function Home() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               </div>
@@ -504,15 +510,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mb-8">
-              {/* TODO: Add simple map illustration or borough montage visual here */}
-              <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-primary-100 to-primary-200">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-gray-700">
-                    <p className="text-2xl font-bold mb-2">South West London</p>
-                    <p className="text-sm">Lambeth • Wandsworth • Merton • Richmond upon Thames</p>
-                  </div>
-                </div>
-              </div>
+              <LondonBoroughsMap />
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               {['Lambeth', 'Wandsworth', 'Merton', 'Richmond upon Thames'].map((borough) => (
@@ -602,7 +600,7 @@ export default function Home() {
             fill
             className="object-cover"
             sizes="100vw"
-            priority={false}
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-800/90 via-primary-600/85 to-primary-500/80" />
         </div>

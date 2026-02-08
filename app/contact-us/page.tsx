@@ -5,25 +5,115 @@ import { useState, type ChangeEvent, type FormEvent } from 'react'
 
 import Reveal from '@/components/Reveal'
 
+type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
+
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   })
+  const [formStatus, setFormStatus] = useState<FormStatus>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({})
+
+  const validateField = (name: string, value: string): string => {
+    switch (name) {
+      case 'name':
+        if (!value.trim()) return 'Name is required'
+        if (value.trim().length < 2) return 'Name must be at least 2 characters'
+        return ''
+      case 'email':
+        if (!value.trim()) return 'Email is required'
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        if (!emailRegex.test(value)) return 'Please enter a valid email address'
+        return ''
+      case 'message':
+        if (!value.trim()) return 'Message is required'
+        if (value.trim().length < 10) return 'Message must be at least 10 characters'
+        return ''
+      default:
+        return ''
+    }
+  }
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
+    })
+    // Clear field error when user starts typing
+    if (fieldErrors[name]) {
+      setFieldErrors({
+        ...fieldErrors,
+        [name]: '',
+      })
+    }
+    // Clear general error message
+    if (errorMessage) {
+      setErrorMessage('')
+    }
+  }
+
+  const handleBlur = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    const error = validateField(name, value)
+    setFieldErrors({
+      ...fieldErrors,
+      [name]: error,
     })
   }
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! We will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
+    setErrorMessage('')
+
+    // Validate all fields
+    const errors: Record<string, string> = {}
+    Object.keys(formData).forEach((key) => {
+      const error = validateField(key, formData[key as keyof typeof formData])
+      if (error) {
+        errors[key] = error
+      }
+    })
+
+    if (Object.keys(errors).length > 0) {
+      setFieldErrors(errors)
+      return
+    }
+
+    setFormStatus('submitting')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message')
+      }
+
+      setFormStatus('success')
+      setFormData({ name: '', email: '', message: '' })
+      setFieldErrors({})
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setFormStatus('idle')
+      }, 5000)
+    } catch (error) {
+      setFormStatus('error')
+      setErrorMessage(
+        error instanceof Error ? error.message : 'Failed to send message. Please try again later.'
+      )
+    }
   }
 
   return (
@@ -63,10 +153,26 @@ export default function ContactUs() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div className="bg-white border border-primary-100 p-8 rounded-2xl shadow-[0px_15px_40px_rgba(67,95,93,0.08)]">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6" noValidate>
+                  {/* Success Message */}
+                  {formStatus === 'success' && (
+                    <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg">
+                      <p className="font-semibold">✓ Message sent successfully!</p>
+                      <p className="text-sm mt-1">We&apos;ll get back to you as soon as possible.</p>
+                    </div>
+                  )}
+
+                  {/* Error Message */}
+                  {formStatus === 'error' && errorMessage && (
+                    <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
+                      <p className="font-semibold">✗ Error</p>
+                      <p className="text-sm mt-1">{errorMessage}</p>
+                    </div>
+                  )}
+
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Name
+                      Name <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="text"
@@ -74,15 +180,28 @@ export default function ContactUs() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
+                      onBlur={handleBlur}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition"
+                      disabled={formStatus === 'submitting'}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition ${
+                        fieldErrors.name
+                          ? 'border-red-300 bg-red-50'
+                          : 'border-gray-300'
+                      } ${formStatus === 'submitting' ? 'opacity-50 cursor-not-allowed' : ''}`}
                       placeholder="Your Name"
+                      aria-invalid={!!fieldErrors.name}
+                      aria-describedby={fieldErrors.name ? 'name-error' : undefined}
                     />
+                    {fieldErrors.name && (
+                      <p id="name-error" className="mt-1 text-sm text-red-600">
+                        {fieldErrors.name}
+                      </p>
+                    )}
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email
+                      Email <span className="text-red-500">*</span>
                     </label>
                     <input
                       type="email"
@@ -90,33 +209,90 @@ export default function ContactUs() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
+                      onBlur={handleBlur}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition"
+                      disabled={formStatus === 'submitting'}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition ${
+                        fieldErrors.email
+                          ? 'border-red-300 bg-red-50'
+                          : 'border-gray-300'
+                      } ${formStatus === 'submitting' ? 'opacity-50 cursor-not-allowed' : ''}`}
                       placeholder="your.email@example.com"
+                      aria-invalid={!!fieldErrors.email}
+                      aria-describedby={fieldErrors.email ? 'email-error' : undefined}
                     />
+                    {fieldErrors.email && (
+                      <p id="email-error" className="mt-1 text-sm text-red-600">
+                        {fieldErrors.email}
+                      </p>
+                    )}
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Message
+                      Message <span className="text-red-500">*</span>
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
+                      onBlur={handleBlur}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition resize-none"
+                      disabled={formStatus === 'submitting'}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent outline-none transition resize-none ${
+                        fieldErrors.message
+                          ? 'border-red-300 bg-red-50'
+                          : 'border-gray-300'
+                      } ${formStatus === 'submitting' ? 'opacity-50 cursor-not-allowed' : ''}`}
                       placeholder="Your Message"
+                      aria-invalid={!!fieldErrors.message}
+                      aria-describedby={fieldErrors.message ? 'message-error' : undefined}
                     />
+                    {fieldErrors.message && (
+                      <p id="message-error" className="mt-1 text-sm text-red-600">
+                        {fieldErrors.message}
+                      </p>
+                    )}
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-800 transition shadow-lg"
+                    disabled={formStatus === 'submitting'}
+                    className={`w-full px-8 py-3 rounded-lg font-semibold transition shadow-lg ${
+                      formStatus === 'submitting'
+                        ? 'bg-primary-400 cursor-not-allowed'
+                        : 'bg-primary-700 hover:bg-primary-800'
+                    } text-white`}
                   >
-                    Send
+                    {formStatus === 'submitting' ? (
+                      <span className="flex items-center justify-center gap-2">
+                        <svg
+                          className="animate-spin h-5 w-5"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                          ></circle>
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          ></path>
+                        </svg>
+                        Sending...
+                      </span>
+                    ) : (
+                      'Send Message'
+                    )}
                   </button>
                 </form>
               </div>
