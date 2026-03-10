@@ -85,7 +85,7 @@ export default function About() {
               Built by care professionals who believe in independence-first support
             </h2>
             <p>
-              PharmacodeCare was founded by a registered NHS nurse with over 10 years of experience delivering quality care. Drawing on extensive clinical experience, we saw the need for comprehensive, person-centered care services that truly enable independence. Today, our residential facilities and domiciliary services combine safe, supportive environments with expert care so individuals can thrive in their own homes.
+              PharmacodeCare was founded by a registered NHS nurse with over 10 years of experience delivering quality care. Drawing on extensive clinical experience, we saw the need for comprehensive, person-centered care services that truly enable independence. Today, our supported living, outreach and (subject to CQC registration) domiciliary care services combine safe, supportive approaches with expert care so individuals can thrive in their own homes and communities.
             </p>
             <p>
               Every person we support is welcomed with respect and understanding. We take time to learn their story, cultural background, family ties, and the goals they still carry. That knowledge fuels personalized care plans covering daily living support, community integration, wellbeing activities, and meaningful routines.
@@ -127,10 +127,10 @@ export default function About() {
 
       <section className="py-20">
         <div className="container mx-auto px-4 grid gap-10 lg:grid-cols-2">
-          <div className="grid gap-6">
-            <div className="relative h-72 rounded-3xl overflow-hidden shadow-xl">
-              <Image src="/about/about-3.png" alt="Bright residential care spaces" fill className="object-cover" />
-            </div>
+            <div className="grid gap-6">
+              <div className="relative h-72 rounded-3xl overflow-hidden shadow-xl">
+                <Image src="/about/about-3.png" alt="Bright supported living and community spaces" fill className="object-cover" />
+              </div>
             <div className="relative h-72 rounded-3xl overflow-hidden shadow-xl">
               <Image src="/about/about-4.png" alt="Supportive care staff" fill className="object-cover" />
             </div>
@@ -139,7 +139,7 @@ export default function About() {
             <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Spaces with purpose</p>
             <h2 className="text-4xl font-bold text-gray-900">Safe, comfortable environments designed for independence and growth</h2>
             <p>
-              Our residential care facilities provide move-in ready accommodation with comfortable furnishings, secure access, and therapeutic spaces. Communal areas host activities, social events, and support groups, while our domiciliary services bring expert care directly to people&apos;s homes.
+              Pharmacode Care Limited does not provide its own residential accommodation. Instead, we work alongside housing providers, landlords, and families to support people in their own homes or shared accommodation. Communal and community spaces host activities, social events, and support sessions, while our domiciliary and outreach services bring expert care directly to people&apos;s homes.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">

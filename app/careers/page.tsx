@@ -14,7 +14,7 @@ const roles = [
     title: 'Support Worker',
     location: 'Various locations across South West London',
     type: 'Full-time & Part-time',
-    description: 'Join our team providing person-centered care and support to individuals in their homes and residential settings.',
+    description: 'Join our team providing person-centered care and support to adults in their own homes, supported living, and community settings.',
   },
   {
     title: 'Care Coordinator',

@@ -5,8 +5,8 @@ import LondonBoroughsMap from '@/components/LondonBoroughsMap'
 const boroughs = [
   {
     name: 'Lambeth',
-    description: 'Comprehensive residential and domiciliary care services across Lambeth, with strong links to local NHS trusts and community services.',
-    services: ['Domiciliary care', 'Residential care', 'Mental health support', 'Elderly care'],
+    description: 'Comprehensive supported living, outreach and domiciliary care (awaiting CQC) services across Lambeth, with strong links to local NHS trusts and community services.',
+    services: ['Domiciliary care', 'Supported living care', 'Mental health support', 'Elderly care'],
   },
   {
     name: 'Wandsworth',
@@ -16,7 +16,7 @@ const boroughs = [
   {
     name: 'Merton',
     description: 'Outcome-focused care across Merton, working closely with local authorities and families to deliver person-centered support.',
-    services: ['Domiciliary support', 'Residential facilities', 'Community integration', '24/7 care'],
+    services: ['Domiciliary support', 'Supported living settings', 'Community integration', '24/7 care'],
   },
   {
     name: 'Richmond upon Thames',
@@ -45,7 +45,7 @@ export default function AreasWeCover() {
               Serving South West London with outcome-focused care
             </h1>
             <p className="text-lg text-primary-50">
-              We provide residential care and domiciliary support across four boroughs, with same-week starts available where capacity allows.
+              We provide supported living, outreach and domiciliary support (awaiting CQC registration) across four boroughs, with same-week starts available where capacity allows.
             </p>
           </div>
         </div>

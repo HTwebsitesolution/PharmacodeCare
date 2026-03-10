@@ -9,7 +9,7 @@ const focusAreas = [
   },
   {
     title: 'Supported Living Care',
-    copy: 'Person-centred supported living care in residential settings, helping adults build skills, confidence, and meaningful day-to-day structure.',
+    copy: 'Person-centred supported living care in people&apos;s own homes or shared accommodation arranged with housing partners, helping adults build skills, confidence, and meaningful day-to-day structure.',
     image: '/services/service-2.png',
   },
   {
@@ -48,7 +48,7 @@ export default function Services() {
               Outreach, supported living and domiciliary care for adults aged 18-65
             </h1>
             <p className="text-lg text-primary-50">
-              We combine residential care, domiciliary support, and community integration so every person can maintain independence, improve wellbeing, and remain safely in their own homes.
+              We combine supported living, outreach support, and domiciliary care (awaiting CQC registration) with community integration so every person can maintain independence, improve wellbeing, and remain safely in their own homes.
             </p>
             <div className="flex flex-wrap gap-8 text-primary-50">
               <div>
@@ -135,7 +135,7 @@ export default function Services() {
               Integrated care services that evolve with each individual
             </h2>
             <p className="text-lg text-gray-600">
-              By blending residential care, domiciliary support, and community participation, we create comprehensive care plans individuals can maintain for long-term independence.
+              By blending supported living, outreach support, domiciliary care (awaiting CQC registration), and community participation, we create comprehensive care plans individuals can maintain for long-term independence.
             </p>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -307,7 +307,7 @@ export default function Services() {
             <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Service areas</p>
             <h2 className="text-4xl font-bold text-gray-900">Serving South West London boroughs</h2>
             <p>
-              We provide residential care and domiciliary support services across Lambeth, Wandsworth, Merton, and Richmond upon Thames. Each referral receives a prompt response, detailed assessment, and collaborative care planning.
+              We provide supported living, outreach support, and domiciliary care (awaiting CQC registration) across Lambeth, Wandsworth, Merton, and Richmond upon Thames. Each referral receives a prompt response, detailed assessment, and collaborative care planning.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">

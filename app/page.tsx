@@ -488,7 +488,7 @@ export default function Home() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Areas We Cover</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Serving South West London</h2>
               <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                We provide residential care and domiciliary support across four boroughs. <strong>Same-week starts subject to availability.</strong>
+                We provide supported living, outreach and domiciliary support (awaiting CQC registration) across four boroughs. <strong>Same-week starts subject to availability.</strong>
               </p>
             </div>
             <div className="mb-8">
@@ -501,7 +501,7 @@ export default function Home() {
                   className="rounded-xl border border-primary-200 bg-white p-6 text-center shadow-sm"
                 >
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">{borough}</h3>
-                  <p className="text-gray-600 text-sm mb-3">Residential & Domiciliary Care</p>
+                  <p className="text-gray-600 text-sm mb-3">Supported living, outreach & domiciliary</p>
                   <p className="text-xs text-primary-700 font-medium">Postcode coverage available</p>
                 </div>
               ))}

@@ -146,7 +146,7 @@ export default function ContactUs() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-500 mb-4">We&apos;re Here To Help</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Get In Touch For All Care Enquiries</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Send us a message and we&apos;ll respond as soon as possible. Our team is ready to answer your questions and discuss how we can support you or your loved ones with residential care or domiciliary services.
+                Send us a message and we&apos;ll respond as soon as possible. Our team is ready to answer your questions and discuss how we can support you or your loved ones with supported living, outreach, or domiciliary care (awaiting CQC registration).
               </p>
             </div>
 
