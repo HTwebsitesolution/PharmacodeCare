@@ -54,6 +54,7 @@ export default function Services() {
               <div>
                 <p className="text-4xl font-bold text-white">18-65</p>
                 <p className="text-sm uppercase tracking-[0.2em]">Adult care age range</p>
+              </div>
               <div>
                 <p className="text-4xl font-bold text-white">24/7</p>
                 <p className="text-sm uppercase tracking-[0.2em]">Care support</p>
