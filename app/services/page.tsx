@@ -98,30 +98,30 @@ export default function Services() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div className="space-y-6 text-lg text-gray-600">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Residential facilities</p>
-            <h2 className="text-4xl font-bold text-gray-900">Safe, comfortable accommodation designed for independence and wellbeing</h2>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Support where you live</p>
+            <h2 className="text-4xl font-bold text-gray-900">Safe, flexible support in your own home and community</h2>
             <p>
-              Our residential care facilities provide move-in ready accommodation with comfortable furnishings, secure access, and therapeutic spaces. Communal areas host activities, social events, and support groups, while individual rooms offer privacy and personal space.
+              Pharmacode Care Limited does not provide its own residential accommodation. Instead, we work alongside housing providers, landlords, and families to deliver supported living, outreach, and (subject to CQC registration) domiciliary care where people already live.
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <span className="text-primary-700 text-xl font-bold">•</span>
-                <span>24/7 onsite care staff with digital call systems and rapid-response protocols.</span>
+                <span>Support delivered in people&apos;s own homes or shared accommodation arranged by housing partners.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-700 text-xl font-bold">•</span>
-                <span>Therapeutic rooms for activities, wellbeing sessions, and family visits.</span>
+                <span>Flexible visit schedules, including daytime, evenings, weekends, and night support where required.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-700 text-xl font-bold">•</span>
-                <span>Domiciliary care bringing expert support directly to people&apos;s own homes.</span>
+                <span>Focus on safety, independence, and wellbeing within familiar surroundings.</span>
               </li>
             </ul>
           </div>
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-tr from-primary-100 to-white blur-3xl" aria-hidden />
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-              <Image src="/services/service-5.png" alt="Modern residential care facility" width={900} height={700} className="object-cover" />
+              <Image src="/services/service-5.png" alt="Support provided in the community and at home" width={900} height={700} className="object-cover" />
             </div>
           </div>
         </div>
