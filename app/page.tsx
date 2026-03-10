@@ -276,56 +276,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview - Reduced Text, Visual Focus */}
+      {/* Services Overview - Updated Services List */}
       <Reveal as="section" className="py-20 bg-white fade-up">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Our Services</p>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Specialist care across South West London</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Residential and community-based adult care</h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                We provide outreach care services, supported living care, and domiciliary care (waiting CQC) for adults aged 18-65 who want to remain safely in their own homes or community settings.
+              </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 {
-                  title: 'Domiciliary Care',
-                  description: 'Personal care and daily living support in your own home.',
-                  tags: ['Personal care', 'Meals', 'Medication prompts'],
-                  boundary: 'Non-clinical support alongside NHS/clinical teams where appropriate.',
+                  title: 'Outreach Care Services',
+                  description: 'Visits in the community and at home to support daily living, safety, and routines.',
+                  tags: ['Adults 18-65', 'Community-based', 'Independence'],
+                  boundary: 'Non-clinical support working alongside health and social care teams.',
                   link: '/services',
                 },
                 {
-                  title: 'Support for Elderly & Disabled',
-                  description: 'Compassionate care enabling independence and wellbeing.',
-                  tags: ['Ages 18-85', 'Tailored plans', 'Regular reviews'],
-                  boundary: 'Flexible support that adapts to changing needs.',
+                  title: 'Supported Living Care',
+                  description: 'Residential supported living with structured support for everyday life and skills.',
+                  tags: ['Adults 18-65', 'Residential', 'Skill-building'],
+                  boundary: 'Care that enables people to live as independently as possible.',
                   link: '/services',
                 },
                 {
-                  title: 'Mental Health Support',
-                  description: 'Specialist residential and community support for recovery.',
-                  tags: ['Residential', 'Community', 'Recovery focus'],
-                  boundary: 'Non-clinical support alongside NHS/clinical teams where appropriate.',
-                  link: '/services',
-                },
-                {
-                  title: 'Substance Misuse Recovery',
-                  description: 'Structured support programs for recovery and independence.',
-                  tags: ['Structured programs', 'Recovery focus', 'Independence'],
-                  boundary: 'Non-clinical support alongside NHS/clinical teams where appropriate.',
-                  link: '/services',
-                },
-                {
-                  title: 'Respite Care',
-                  description: 'Short-term support giving families and carers a break.',
-                  tags: ['Flexible hours', 'Short-term', 'Family support'],
-                  boundary: 'From a few hours to several weeks.',
-                  link: '/services',
-                },
-                {
-                  title: 'Learning Disabilities Support',
-                  description: 'Person-centered care helping individuals thrive in communities.',
-                  tags: ['Person-centered', 'Community', 'Independence'],
-                  boundary: 'Community-based support promoting choice.',
+                  title: 'Domiciliary Care (waiting CQC)',
+                  description: 'Planned personal care and home support delivered where people live.',
+                  tags: ['Adults 18-65', 'Home care', 'Daily support'],
+                  boundary: 'Domiciliary care service with CQC registration in progress.',
                   link: '/services',
                 },
               ].map((service) => (

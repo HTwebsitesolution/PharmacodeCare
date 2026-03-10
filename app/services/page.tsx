@@ -3,29 +3,29 @@ import Link from 'next/link'
 
 const focusAreas = [
   {
-    title: '24/7 Residential Care',
-    copy: 'Round-the-clock support in our residential facilities for mental health, learning disabilities, and substance abuse, ensuring individuals feel safe and supported.',
+    title: 'Outreach Care Services',
+    copy: 'Flexible outreach support in the community, visiting people where they live to help maintain independence, safety, and daily routines.',
     image: '/services/service-1.png',
   },
   {
-    title: 'Domiciliary & Home Care',
-    copy: 'Personalized home care services bringing support directly to people\'s homes, enabling them to maintain independence and remain safely in their own accommodation.',
+    title: 'Supported Living Care',
+    copy: 'Person-centred supported living care in residential settings, helping adults build skills, confidence, and meaningful day-to-day structure.',
     image: '/services/service-2.png',
   },
   {
-    title: 'Elderly & Disabled Care',
-    copy: 'Specialist care services for elderly and disabled adults, covering personal care, daily living support, and community integration.',
+    title: 'Domiciliary Care (waiting CQC)',
+    copy: 'Planned domiciliary care services (CQC registration in progress) designed to deliver safe, consistent support to people in their own homes.',
     image: '/services/service-3.png',
   },
 ]
 
 const programmes = [
-  'Residential care for mental health, learning disabilities, and substance abuse support.',
-  'Domiciliary care services across Lambeth, Wandsworth, Merton, and Richmond upon Thames.',
-  'Personal care and daily living support enabling independence at home.',
-  'Community integration and social connection facilitation.',
-  'Family support services including meetings, updates, and collaborative care planning.',
-  'Outcome-focused care plans reducing reliance on hospital and residential services.',
+  'Outreach care services delivering support in people’s own homes and communities.',
+  'Supported living care with structured routines, tenancy support, and life skills coaching.',
+  'Domiciliary care packages (waiting CQC) focused on personal care, meals, and daily living tasks.',
+  'Community engagement and social connection activities that reduce isolation.',
+  'Family and carer involvement through regular updates, meetings, and shared care planning.',
+  'Outcome-focused support plans that promote independence and reduce reliance on hospital care.',
 ]
 
 export default function Services() {
@@ -45,16 +45,15 @@ export default function Services() {
           <div className="max-w-4xl space-y-6">
             <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Comprehensive residential and domiciliary care services for adults aged 18-85
+              Outreach, supported living and domiciliary care for adults aged 18-65
             </h1>
             <p className="text-lg text-primary-50">
               We combine residential care, domiciliary support, and community integration so every person can maintain independence, improve wellbeing, and remain safely in their own homes.
             </p>
             <div className="flex flex-wrap gap-8 text-primary-50">
               <div>
-                <p className="text-4xl font-bold text-white">18-85</p>
-                <p className="text-sm uppercase tracking-[0.2em]">Age range</p>
-              </div>
+                <p className="text-4xl font-bold text-white">18-65</p>
+                <p className="text-sm uppercase tracking-[0.2em]">Adult care age range</p>
               <div>
                 <p className="text-4xl font-bold text-white">24/7</p>
                 <p className="text-sm uppercase tracking-[0.2em]">Care support</p>

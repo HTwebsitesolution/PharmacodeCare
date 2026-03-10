@@ -337,9 +337,9 @@ export default function ContactUs() {
                   </div>
 
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-700 mb-2">Age Range</h4>
+                    <h4 className="text-lg font-semibold text-gray-700 mb-2">Age Group</h4>
                     <p className="text-gray-600">
-                      18 - 85 years
+                      Adult care 18-65 years
                     </p>
                   </div>
 

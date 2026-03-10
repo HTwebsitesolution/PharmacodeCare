@@ -10,9 +10,9 @@ const pillars = [
 
 const whoWeSupport = [
   'Adults with mental health needs and learning disabilities',
-  'Individuals requiring substance abuse support and recovery services',
-  'Elderly and disabled adults needing residential or domiciliary care',
-  'Adults aged 18-85 seeking to maintain independence at home',
+  'Adults needing outreach or supported living care in the community',
+  'Adults requiring domiciliary care at home (CQC registration in progress)',
+  'Adults aged 18-65 seeking to maintain independence at home',
   'Individuals transitioning from hospital or institutional care',
 ]
 
@@ -158,7 +158,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Who we support</p>
-            <h2 className="text-4xl font-bold text-gray-900">Open doors for adults aged 18-85 across South West London</h2>
+            <h2 className="text-4xl font-bold text-gray-900">Adult care for people aged 18-65 across South West London</h2>
             <p className="text-lg text-gray-600">
               We provide care services for people with a wide range of needs. Our flexible care model allows us to increase or step-down support based on progress, ensuring placements remain successful and individuals can maintain independence.
             </p>

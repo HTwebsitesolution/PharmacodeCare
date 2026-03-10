@@ -20,7 +20,7 @@ const boroughs = [
   },
   {
     name: 'Richmond upon Thames',
-    description: 'Quality care services in Richmond, enabling individuals aged 18-85 to live independently in their own homes.',
+    description: 'Quality care services in Richmond, enabling adults aged 18-65 to live independently in their own homes.',
     services: ['Elderly care', 'Disabled support', 'Mental health services', 'Reablement programs'],
   },
 ]
