@@ -2,18 +2,38 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const pillars = [
-  { title: 'Promote Independence', copy: 'Flexible support that adjusts to each person\'s pace, routines, and strengths, enabling them to live as independently as possible.' },
-  { title: 'Protect Wellbeing', copy: '24/7 safeguarding, therapeutic interventions, and safe environments that feel calming and supportive.' },
-  { title: 'Champion Community', copy: 'Partnerships with neighbours, councils, families, and local services to keep everyone connected and integrated.' },
-  { title: 'Uphold Dignity', copy: 'Individuals lead their care plans, make informed choices, and feel genuinely heard and respected.' },
+  {
+    title: 'Person-Centred Care',
+    copy: 'We place individuals at the heart of all decisions, listening carefully and shaping support around their goals, preferences, and strengths.',
+  },
+  {
+    title: 'Respect & Dignity',
+    copy: 'We treat everyone with kindness, fairness, and respect, protecting privacy and upholding dignity in every interaction.',
+  },
+  {
+    title: 'Empowerment',
+    copy: 'We support people to build skills, confidence, and control over their own lives so they can live as independently as possible.',
+  },
+  {
+    title: 'Compassion',
+    copy: 'We deliver care with empathy, understanding, and professionalism, especially during times of change or crisis.',
+  },
+  {
+    title: 'Safety & Accountability',
+    copy: 'We uphold safeguarding, quality, and compliance at all times, taking responsibility for safe and consistent care.',
+  },
+  {
+    title: 'Inclusion',
+    copy: 'We promote equality, diversity, and active participation in the community so people feel connected and valued.',
+  },
 ]
 
 const whoWeSupport = [
-  'Adults with mental health needs and learning disabilities',
-  'Adults needing outreach or supported living care in the community',
-  'Adults requiring domiciliary care at home (CQC registration in progress)',
-  'Adults aged 18-65 seeking to maintain independence at home',
-  'Individuals transitioning from hospital or institutional care',
+  'Adults aged 18–65 with learning disabilities',
+  'Adults with physical disabilities or mobility needs',
+  'Adults with mental health needs',
+  'Adults with autism',
+  'Adults with long-term health conditions',
 ]
 
 export default function About() {
@@ -33,10 +53,10 @@ export default function About() {
           <div className="max-w-3xl space-y-6">
             <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Care services built on expertise, compassion, and outcome-focused support
+              Supported living and outreach services built on expertise, compassion, and outcome-focused support
             </h1>
             <p className="text-lg text-primary-50">
-              We combine residential care, domiciliary support, and community integration to deliver care services that enable independence, improve wellbeing, and reduce reliance on hospital and residential services.
+              Pharmacode Care Limited provides supported living and outreach services that empower adults to live independently, safely, and with dignity in their own homes and communities. We are also preparing to provide high-quality domiciliary (home-based) care, which will commence once CQC registration is approved.
             </p>
             <div className="flex flex-wrap gap-8 text-primary-50">
               <div>
@@ -83,12 +103,15 @@ export default function About() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-4">
-            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Mission & values</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Mission, vision & values</p>
             <h2 className="text-4xl font-bold text-gray-900 reveal-center animate">
-              We are guided by dignity, safety, and independence
+              A clear mission with values that guide every decision
             </h2>
             <p className="text-lg text-gray-600">
-              Our mission is to deliver person-led care that develops independence while protecting wellbeing. Our care is outcome-focused, enabling individuals to maintain independence, improve wellbeing, and remain safely within their own homes, reducing reliance on hospital and residential services.
+              Our mission is to provide high-quality, person-centred supported living and outreach services that empower adults to live independently, safely, and with dignity within their own communities.
+            </p>
+            <p className="text-lg text-gray-600">
+              Our vision is to be a trusted and compassionate care provider recognised for promoting independence, inclusion, and positive life outcomes for individuals with diverse needs across our communities.
             </p>
           </div>
           <div className="mt-10 grid gap-6 md:grid-cols-2">

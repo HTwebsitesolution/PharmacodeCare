@@ -19,7 +19,7 @@ export default function Home() {
               Stay safely at home, improve wellbeing, reduce hospital reliance
             </h1>
             <p className="text-xl md:text-2xl text-gray-100/90 drop-shadow max-w-3xl">
-              Outcome-focused home care across <strong>Lambeth, Wandsworth, Merton & Richmond upon Thames</strong>. Same-week starts available where capacity allows.
+              Outcome-focused supported living, outreach and (subject to CQC approval) domiciliary care for adults aged 18–65 across <strong>Lambeth, Wandsworth, Merton & Richmond upon Thames</strong>. Same-week starts available where capacity allows.
             </p>
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
@@ -284,7 +284,7 @@ export default function Home() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Our Services</p>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Residential and community-based adult care</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                We provide outreach care services, supported living care, and domiciliary care (waiting CQC) for adults aged 18-65 who want to remain safely in their own homes or community settings.
+                We provide outreach care services, supported living care, and domiciliary care (waiting CQC) for adults aged 18-65 who want to remain safely in their own homes or community settings. Our mission is to help adults live independently, safely, and with dignity in their own communities.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

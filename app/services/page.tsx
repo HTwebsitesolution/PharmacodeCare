@@ -152,6 +152,120 @@ export default function Services() {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 grid gap-10 lg:grid-cols-2 items-start">
+          <div className="space-y-4 text-lg text-gray-600">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Supported Living</p>
+            <h2 className="text-3xl font-bold text-gray-900">Supported Living services</h2>
+            <p>
+              Supported Living services are designed to support adults to live as independently as possible in their own home or shared accommodation while receiving personalised, person-centred care and support.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Person-centred support planning.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Support with personal care (washing, dressing, hygiene).</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Medication prompting and administration.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Meal planning and preparation.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Domestic support including cleaning, laundry, and shopping.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Tenancy sustainment support with rent, bills, and liaising with landlords.</span>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4 text-lg text-gray-600">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Outreach support</p>
+            <h2 className="text-3xl font-bold text-gray-900">Outreach (floating) support services</h2>
+            <p>
+              Outreach (floating) support provides flexible, goal-focused support to individuals living independently in the community, without accommodation being provided.
+            </p>
+            <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Practical support with daily living tasks.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Support accessing benefits, housing, and community services.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Support attending health and social care appointments.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Emotional support, crisis prevention, and resilience-building.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Support during transitions such as hospital discharge or moving home.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Confidence-building, community engagement, and safeguarding support.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <p className="text-sm uppercase tracking-[0.3em] text-primary-500">Domiciliary care</p>
+            <h2 className="text-3xl font-bold text-gray-900">Domiciliary care services (awaiting CQC registration)</h2>
+            <p className="text-lg text-gray-600">
+              Our organisation is preparing to deliver domiciliary (home-based) care and is currently awaiting Care Quality Commission (CQC) registration. Once registered, services will be delivered in line with CQC Fundamental Standards and relevant legislation.
+            </p>
+          </div>
+          <div className="mt-8 max-w-3xl mx-auto">
+            <ul className="space-y-3 text-gray-700 text-lg">
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Personal care support (washing, dressing, toileting).</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Medication support and prompting.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Meal preparation and nutrition support.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Support with mobility, transfers, and daily routines at home.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Companionship and emotional support.</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-primary-700 mt-1">•</span>
+                <span>Person-centred care planning, reviews, and safeguarding, with dignity and respect at all times.</span>
+              </li>
+            </ul>
+            <p className="mt-4 text-sm text-gray-600 italic">
+              Domiciliary care services will commence only upon successful CQC registration and approval.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-primary-50">
         <div className="container mx-auto px-4 grid gap-10 lg:grid-cols-2">
           <div className="space-y-6 text-gray-600 text-lg leading-relaxed">

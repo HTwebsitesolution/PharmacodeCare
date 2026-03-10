@@ -44,7 +44,7 @@ export default function Policies() {
               Transparency, trust, and accountability
             </h1>
             <p className="text-lg text-primary-50">
-              Our policies and procedures ensure we deliver safe, high-quality care while protecting the rights and dignity of everyone we support.
+              Our policies and procedures ensure we deliver safe, high-quality care while protecting the rights and dignity of everyone we support, in line with regulatory standards such as the Care Quality Commission (CQC) Fundamental Standards.
             </p>
           </div>
         </div>
