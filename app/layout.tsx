@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
   description:
-    'Pharmacode Care Limited - You are Supported. Supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults aged 18–65 to maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
+    'In-house care and domiciliary support services for adults aged 18–65, helping people maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
     description:
-      'Pharmacode Care Limited - You are Supported. Supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults aged 18–65 to maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
+      'In-house care and domiciliary support services for adults aged 18–65, helping people maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
     images: [
       {
         url: '/slider/Pharmacode hero image.png',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
     description:
-      'Pharmacode Care Limited - You are Supported. Supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults aged 18–65 to maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
+      'In-house care and domiciliary support services for adults aged 18–65, helping people maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
     images: ['/slider/Pharmacode hero image.png'],
   },
 }
