@@ -41,7 +41,7 @@ export default function Header() {
                 <div className="relative p-2">
                   <Image
                     src="/media/Pharmacode%20Logo%20-updated.png"
-                    alt="PharmacodeCare logo"
+                    alt="Pharmacode Care Limited logo"
                     width={73}
                     height={73}
                     priority
@@ -51,7 +51,7 @@ export default function Header() {
               </div>
               <div>
                 <span className="text-2xl font-bold text-gray-900 block group-hover:text-primary-600 transition">
-                  PharmacodeCare
+                  Pharmacode Care Limited
                 </span>
                 <p className="text-sm text-gray-600 italic mt-1">You are Supported</p>
               </div>

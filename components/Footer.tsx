@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="absolute inset-0">
         <Image
           src="/slider/slide-4.png"
-          alt="PharmacodeCare team"
+          alt="Pharmacode Care Limited team"
           fill
           className="object-cover opacity-30"
           sizes="100vw"
@@ -21,14 +21,14 @@ export default function Footer() {
           <div className="grid gap-10 lg:grid-cols-4 text-white">
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <Image src="/media/Pharmacode%20Logo%20-updated.png" alt="PharmacodeCare logo" width={57} height={57} className="rounded-xl bg-white/90 p-2" />
+                <Image src="/media/Pharmacode%20Logo%20-updated.png" alt="Pharmacode Care Limited logo" width={57} height={57} className="rounded-xl bg-white/90 p-2" />
                 <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-primary-100">PharmacodeCare</p>
+                  <p className="text-sm uppercase tracking-[0.3em] text-primary-100">Pharmacode Care Limited</p>
                   <p className="text-xl font-semibold">You are Supported</p>
                 </div>
               </div>
               <p className="text-primary-50 leading-relaxed">
-                We provide residential care and domiciliary support services enabling individuals to maintain independence, improve wellbeing, and remain safely in their own homes.
+                We provide supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults to maintain independence, improve wellbeing, and remain safely in their own homes and communities.
               </p>
               <div className="flex space-x-4 text-primary-50">
                 <a href="#" className="hover:text-white transition">Facebook</a>
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-12 border-t border-white/20 pt-6 flex flex-col gap-4 text-sm text-primary-50 md:flex-row md:items-center md:justify-between">
-            <p>&copy; {new Date().getFullYear()} PharmacodeCare. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Pharmacode Care Limited. All Rights Reserved.</p>
             <p>
               Designed by{' '}
               <a href="https://htwebsolution.com" target="_blank" rel="noreferrer" className="font-semibold text-white hover:underline">

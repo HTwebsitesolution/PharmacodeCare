@@ -8,29 +8,32 @@ import BackToTop from '@/components/BackToTop'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'PharmacodeCare - Quality Healthcare Solutions',
-  description: 'PharmacodeCare - You are Supported. Residential care and domiciliary support services enabling individuals to maintain independence, improve wellbeing, and remain safely in their own homes.',
+  title: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
+  description:
+    'Pharmacode Care Limited - You are Supported. Supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults aged 18–65 to maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
     apple: '/favicon.png',
   },
   openGraph: {
-    title: 'PharmacodeCare - Quality Healthcare Solutions',
-    description: 'PharmacodeCare - You are Supported. Residential care and domiciliary support services enabling individuals to maintain independence, improve wellbeing, and remain safely in their own homes.',
+    title: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
+    description:
+      'Pharmacode Care Limited - You are Supported. Supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults aged 18–65 to maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
     images: [
       {
         url: '/slider/Pharmacode hero image.png',
         width: 1200,
         height: 630,
-        alt: 'PharmacodeCare - Quality Healthcare Solutions',
+        alt: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PharmacodeCare - Quality Healthcare Solutions',
-    description: 'PharmacodeCare - You are Supported. Residential care and domiciliary support services enabling individuals to maintain independence, improve wellbeing, and remain safely in their own homes.',
+    title: 'Pharmacode Care Limited - Supported Living, Outreach & Domiciliary Care',
+    description:
+      'Pharmacode Care Limited - You are Supported. Supported living, outreach and domiciliary (awaiting CQC registration) services enabling adults aged 18–65 to maintain independence, improve wellbeing, and remain safely in their own homes and communities.',
     images: ['/slider/Pharmacode hero image.png'],
   },
 }

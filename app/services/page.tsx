@@ -34,7 +34,7 @@ export default function Services() {
       <section className="relative isolate overflow-hidden bg-gradient-to-r from-primary-700 to-primary-500 text-white">
         <Image
           src="/services/service-4.png"
-          alt="PharmacodeCare care team"
+          alt="Pharmacode Care Limited care team"
           fill
           className="object-cover opacity-40"
           priority
@@ -339,7 +339,7 @@ export default function Services() {
       <section className="relative py-24">
         <Image
           src="/services/service-9.png"
-          alt="PharmacodeCare individuals"
+          alt="Pharmacode Care Limited individuals"
           fill
           className="object-cover"
           sizes="100vw"

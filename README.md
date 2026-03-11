@@ -1,6 +1,6 @@
-# PharmacodeCare Website
+# Pharmacode Care Limited Website
 
-A modern, responsive website for PharmacodeCare - a quality healthcare solutions provider.
+A modern, responsive website for Pharmacode Care Limited - a supported living, outreach and domiciliary (awaiting CQC registration) care provider.
 
 ## Features
 
@@ -56,8 +56,8 @@ To send emails to any recipient (not just verified emails), you need to:
 2. Add and verify your domain (e.g., pharmacodecare.co.uk)
 3. Add DNS records provided by Resend to your domain's DNS settings
 4. Once verified, update `app/api/contact/route.ts`:
-   - Change `from: 'PharmacodeCare Contact <onboarding@resend.dev>'` 
-   - To: `from: 'PharmacodeCare Contact <noreply@pharmacodecare.co.uk>'`
+   - Change `from: 'Pharmacode Care Limited Contact <onboarding@resend.dev>'` 
+   - To: `from: 'Pharmacode Care Limited Contact <noreply@pharmacodecare.co.uk>'`
 5. Update `CONTACT_EMAIL` in `.env.local` to your production email
 
 3. Run the development server:
@@ -105,4 +105,4 @@ Replace placeholder content in:
 
 ## License
 
-Copyright 2025 © PharmacodeCare. All Rights Reserved.
+Copyright 2025 © Pharmacode Care Limited. All Rights Reserved.

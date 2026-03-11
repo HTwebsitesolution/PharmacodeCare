@@ -41,7 +41,7 @@ export default function Careers() {
               Make a real difference in people&apos;s lives
             </h1>
             <p className="text-lg text-primary-50">
-              We&apos;re always looking for compassionate, dedicated individuals to join our care team across South West London. At PharmacodeCare, we believe in supporting our staff just as we support the people in our care.
+              We&apos;re always looking for compassionate, dedicated individuals to join our care team across South West London. At Pharmacode Care Limited, we believe in supporting our staff just as we support the people in our care.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Careers() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-2">You are Supported</p>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Work With Us?</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                At PharmacodeCare, we believe in supporting our team members just as we support the people in our care. We create an environment where you can grow, learn, and make a meaningful impact.
+                At Pharmacode Care Limited, we believe in supporting our team members just as we support the people in our care. We create an environment where you can grow, learn, and make a meaningful impact.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6 mb-12">

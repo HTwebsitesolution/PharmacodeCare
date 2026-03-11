@@ -42,7 +42,7 @@ export default function About() {
       <section className="relative isolate overflow-hidden bg-gradient-to-r from-primary-700 to-primary-500 text-white">
         <Image
           src="/about/about-1.png"
-          alt="PharmacodeCare care team"
+          alt="Pharmacode Care Limited care team"
           fill
           className="object-cover opacity-30"
           sizes="100vw"
@@ -85,7 +85,7 @@ export default function About() {
               Built by care professionals who believe in independence-first support
             </h2>
             <p>
-              PharmacodeCare was founded by a registered NHS nurse with over 10 years of experience delivering quality care. Drawing on extensive clinical experience, we saw the need for comprehensive, person-centered care services that truly enable independence. Today, our supported living, outreach and (subject to CQC registration) domiciliary care services combine safe, supportive approaches with expert care so individuals can thrive in their own homes and communities.
+              Pharmacode Care Limited was founded by a registered NHS nurse with over 10 years of experience delivering quality care. Drawing on extensive clinical experience, we saw the need for comprehensive, person-centered care services that truly enable independence. Today, our supported living, outreach and (subject to CQC registration) domiciliary care services combine safe, supportive approaches with expert care so individuals can thrive in their own homes and communities.
             </p>
             <p>
               Every person we support is welcomed with respect and understanding. We take time to learn their story, cultural background, family ties, and the goals they still carry. That knowledge fuels personalized care plans covering daily living support, community integration, wellbeing activities, and meaningful routines.
@@ -172,7 +172,7 @@ export default function About() {
             </p>
           </div>
           <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl h-96">
-            <Image src="/about/about-5.png" alt="PharmacodeCare care team" fill className="object-cover" />
+            <Image src="/about/about-5.png" alt="Pharmacode Care Limited care team" fill className="object-cover" />
           </div>
         </div>
       </section>
@@ -212,7 +212,7 @@ export default function About() {
             <p className="text-sm uppercase tracking-[0.3em] text-primary-100">Partnerships</p>
             <h2 className="text-4xl font-bold">Working side-by-side with commissioners, clinicians, and families</h2>
             <p className="text-lg text-primary-50">
-              Local authorities, NHS trusts, housing associations, and charities trust PharmacodeCare to deliver responsive care services across Lambeth, Wandsworth, Merton, and Richmond upon Thames. We provide transparent reporting, regular outcomes reviews, and open communication with everyone involved.
+              Local authorities, NHS trusts, housing associations, and charities trust Pharmacode Care Limited to deliver responsive care services across Lambeth, Wandsworth, Merton, and Richmond upon Thames. We provide transparent reporting, regular outcomes reviews, and open communication with everyone involved.
             </p>
           </div>
         </div>

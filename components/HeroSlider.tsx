@@ -30,7 +30,7 @@ export default function HeroSlider() {
         >
           <Image
             src={src}
-            alt={`PharmacodeCare hero image ${index + 1}`}
+            alt={`Pharmacode Care Limited hero image ${index + 1}`}
             fill
             className="object-cover"
             style={{ objectPosition: 'right center' }}

@@ -55,7 +55,7 @@ export async function POST(request: Request) {
     console.log('Note: Using verified email for testing. For production, verify your domain at resend.com/domains')
     
     const { data, error } = await resend.emails.send({
-      from: 'PharmacodeCare Contact <onboarding@resend.dev>', // Update this with your verified domain
+      from: 'Pharmacode Care Limited Contact <onboarding@resend.dev>', // Update this with your verified domain
       to: [recipientEmail],
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
@@ -68,7 +68,7 @@ export async function POST(request: Request) {
             <p><strong>Message:</strong></p>
             <p style="white-space: pre-wrap; background-color: white; padding: 15px; border-radius: 4px; margin-top: 10px;">${message}</p>
           </div>
-          <p style="color: #666; font-size: 12px;">This email was sent from the PharmacodeCare website contact form.</p>
+          <p style="color: #666; font-size: 12px;">This email was sent from the Pharmacode Care Limited website contact form.</p>
         </div>
       `,
       text: `
@@ -95,16 +95,16 @@ Message: ${message}
     // Send confirmation email to user (optional)
     if (process.env.SEND_CONFIRMATION_EMAIL === 'true') {
       await resend.emails.send({
-        from: 'PharmacodeCare <onboarding@resend.dev>', // Update this with your verified domain
+        from: 'Pharmacode Care Limited <onboarding@resend.dev>', // Update this with your verified domain
         to: [email],
-        subject: 'Thank you for contacting PharmacodeCare',
+        subject: 'Thank you for contacting Pharmacode Care Limited',
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #0e8e9d;">Thank you for contacting PharmacodeCare</h2>
+            <h2 style="color: #0e8e9d;">Thank you for contacting Pharmacode Care Limited</h2>
             <p>Dear ${name},</p>
             <p>We have received your message and will get back to you as soon as possible.</p>
             <p>If you have an urgent enquiry, please call us on <strong>07930 180481</strong> (Mon-Fri: 9am-6pm).</p>
-            <p>Best regards,<br>The PharmacodeCare Team</p>
+            <p>Best regards,<br>The Pharmacode Care Limited Team</p>
           </div>
         `,
       })

@@ -121,7 +121,7 @@ export default function ContactUs() {
       <Reveal as="section" className="relative isolate overflow-hidden bg-gradient-to-r from-primary-700 to-primary-500 text-white fade-up">
         <Image
           src="/about/about-1.png"
-          alt="PharmacodeCare welcoming environment"
+          alt="Pharmacode Care Limited welcoming environment"
           fill
           className="object-cover opacity-30"
           sizes="100vw"
@@ -133,7 +133,7 @@ export default function ContactUs() {
             <p className="text-sm uppercase tracking-[0.3em] text-primary-100">You are Supported</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">Contact Us</h1>
             <p className="text-lg text-primary-50 max-w-2xl mx-auto">
-              Whether you are a commissioner, care professional, or family member, our dedicated team is ready to explore how PharmacodeCare can help support independence and wellbeing.
+              Whether you are a commissioner, care professional, or family member, our dedicated team is ready to explore how Pharmacode Care Limited can help support independence and wellbeing.
             </p>
           </div>
         </div>
@@ -376,7 +376,7 @@ export default function ContactUs() {
                 <div className="relative">
                   <Image
                     src="/homepage/home-1.png"
-                    alt="PharmacodeCare team ready to help"
+                    alt="Pharmacode Care Limited team ready to help"
                     width={1200}
                     height={600}
                     className="h-[400px] md:h-[500px] w-full object-cover"

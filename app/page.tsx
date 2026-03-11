@@ -549,7 +549,7 @@ export default function Home() {
                 },
                 {
                   quote:
-                    'As a social worker, I appreciate PharmacodeCare&apos;s transparent reporting and focus on outcomes. They genuinely care about the people they support.',
+                    'As a social worker, I appreciate Pharmacode Care Limited&apos;s transparent reporting and focus on outcomes. They genuinely care about the people they support.',
                   author: 'R.K.',
                   role: 'Social Worker',
                   location: 'Merton',
