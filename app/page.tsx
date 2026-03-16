@@ -172,7 +172,7 @@ export default function Home() {
                 },
                 {
                   title: 'Improve Daily Living Skills',
-                  description: 'Build confidence in cooking, budgeting, and personal care.',
+                  description: 'Build confidence and independent skills such as cooking, budgeting and personal care.',
                   measurement: 'Skills tracked monthly • Milestones celebrated',
                   icon: '💪',
                 },
@@ -184,7 +184,7 @@ export default function Home() {
                 },
                 {
                   title: 'Support Routines & Wellbeing',
-                  description: 'Maintain independence through structured daily support.',
+                  description: 'Facilitate independence through structured individualised day to day support.',
                   measurement: 'Routine plans • Wellbeing checks • Adjustments',
                   icon: '📅',
                 },
@@ -282,7 +282,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary-700 mb-4">Our Services</p>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Residential and community-based adult care</h2>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">Community-based adult social care</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 We provide outreach care services, supported living care, and domiciliary care (waiting CQC) for adults aged 18-65 who want to remain safely in their own homes or community settings. Our mission is to help adults live independently, safely, and with dignity in their own communities.
               </p>
@@ -298,8 +298,8 @@ export default function Home() {
                 },
                 {
                   title: 'Supported Living Care',
-                  description: 'Residential supported living with structured support for everyday life and skills.',
-                  tags: ['Adults 18-65', 'Residential', 'Skill-building'],
+                  description: 'Supported living with structured support for everyday life and skills in people&apos;s own homes or shared accommodation.',
+                  tags: ['Adults 18-65', 'Supported living', 'Skill-building'],
                   boundary: 'Care that enables people to live as independently as possible.',
                   link: '/services',
                 },
