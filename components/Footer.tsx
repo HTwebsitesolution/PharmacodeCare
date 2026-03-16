@@ -61,6 +61,7 @@ export default function Footer() {
               <ul className="space-y-3 text-primary-50">
                 {[
                   { label: 'Policies & Procedures', href: '/policies' },
+                  { label: 'Vision & Mission', href: '/vision-and-mission' },
                   { label: 'Careers', href: '/careers' },
                   { label: 'Areas We Cover', href: '/areas-we-cover' },
                 ].map((item) => (
