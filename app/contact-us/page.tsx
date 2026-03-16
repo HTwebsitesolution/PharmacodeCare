@@ -312,10 +312,17 @@ export default function ContactUs() {
 
                   <div>
                     <h4 className="text-lg font-semibold text-gray-700 mb-2">Phone</h4>
-                    <p className="text-gray-600">
-                      <a href="tel:07930180481" className="hover:text-primary-700 transition">
-                        07930 180481
-                      </a>
+                    <p className="text-gray-600 space-y-1">
+                      <span className="block">
+                        <a href="tel:07930180481" className="hover:text-primary-700 transition">
+                          07930 180481
+                        </a>
+                      </span>
+                      <span className="block">
+                        <a href="tel:07946034784" className="hover:text-primary-700 transition">
+                          07946 034784
+                        </a>
+                      </span>
                     </p>
                   </div>
 

@@ -18,10 +18,17 @@ export default function Header() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-6 text-sm">
-              <a href="tel:07930180481" className="hover:text-primary-200 transition flex items-center gap-2">
-                <span>📞</span>
-                <span>07930 180481</span>
-              </a>
+              <div className="flex items-center gap-4">
+                <a href="tel:07930180481" className="hover:text-primary-200 transition flex items-center gap-2">
+                  <span>📞</span>
+                  <span>07930 180481</span>
+                </a>
+                <span className="text-primary-200">/</span>
+                <a href="tel:07946034784" className="hover:text-primary-200 transition flex items-center gap-2">
+                  <span>📞</span>
+                  <span>07946 034784</span>
+                </a>
+              </div>
               <span className="text-primary-200">|</span>
               <span>Mon-Fri: 9am-6pm</span>
               <span className="text-primary-200">|</span>

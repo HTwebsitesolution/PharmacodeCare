@@ -82,8 +82,22 @@ export default function Footer() {
                   Suite S3, 616 Mitcham Road<br />
                   Croydon, CR0 3AA
                 </li>
-                <li>📞 <a href="tel:07930180481" className="hover:text-white transition">07930 180481</a></li>
-                <li>✉️ <a href="mailto:admin@pharmacodecare.co.uk" className="hover:text-white transition">admin@pharmacodecare.co.uk</a></li>
+                <li>
+                  📞{' '}
+                  <a href="tel:07930180481" className="hover:text-white transition">
+                    07930 180481
+                  </a>{' '}
+                  /{' '}
+                  <a href="tel:07946034784" className="hover:text-white transition">
+                    07946 034784
+                  </a>
+                </li>
+                <li>
+                  ✉️{' '}
+                  <a href="mailto:admin@pharmacodecare.co.uk" className="hover:text-white transition">
+                    admin@pharmacodecare.co.uk
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
