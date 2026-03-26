@@ -32,7 +32,7 @@ export default function Header() {
               <span className="text-primary-200">|</span>
               <span>Mon-Fri: 9am-6pm</span>
               <span className="text-primary-200">|</span>
-              <span>📍 Croydon, CR0 3AA</span>
+              <span>📍 Suite S3, Challenge House, 616 Mitcham Road, Croydon, England, CR0 3AA, United Kingdom</span>
             </div>
           </div>
         </div>

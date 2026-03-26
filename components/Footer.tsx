@@ -78,9 +78,10 @@ export default function Footer() {
               <p className="text-sm uppercase tracking-[0.4em] text-primary-100 mb-3">Contact</p>
               <ul className="space-y-3 text-primary-50">
                 <li>
-                  📍 Challenge House Business Centre<br />
-                  Suite S3, 616 Mitcham Road<br />
-                  Croydon, CR0 3AA
+                  📍 Suite S3, Challenge House<br />
+                  616 Mitcham Road, Croydon<br />
+                  England, CR0 3AA<br />
+                  United Kingdom
                 </li>
                 <li>
                   📞{' '}

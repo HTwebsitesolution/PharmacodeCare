@@ -302,11 +302,11 @@ export default function ContactUs() {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-700 mb-2">Address</h4>
                     <p className="text-gray-600">
-                      Challenge House Business Centre<br />
-                      Suite S3<br />
-                      616 Mitcham Road<br />
-                      Croydon<br />
-                      CR0 3AA
+                      Suite S3, Challenge House<br />
+                      616 Mitcham Road, Croydon<br />
+                      England<br />
+                      CR0 3AA<br />
+                      United Kingdom
                     </p>
                   </div>
 
